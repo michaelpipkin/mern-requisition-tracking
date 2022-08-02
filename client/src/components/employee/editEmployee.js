@@ -5,7 +5,7 @@ export default function Edit() {
     const [form, setForm] = useState({
         firstName: "",
         lastName: "",
-        active: "",
+        active: null,
         employees: [],
     });
     const params = useParams();
@@ -99,9 +99,9 @@ export default function Edit() {
                     <label htmlFor="active">Active</label>
                     <input
                         type="checkbox"
-                        className="form-control"
                         id="active"
-                        value={form.active}
+                        value="Active"
+                        defaultChecked={form.active}
                         onChange={(e) => updateForm({ active: e.target.value })}
                     />
                 </div>

@@ -8,14 +8,14 @@ const Employee = (props) => (
         <td>{props.employee.active}</td>
         <td>
             <Link
-                classfirstName="btn btn-link"
-                to={`/edit/${props.employee._id}`}
+                className="btn btn-link"
+                to={`/editemployee/${props.employee._id}`}
             >
                 Edit
             </Link>{" "}
             |
             <button
-                classfirstName="btn btn-link"
+                className="btn btn-link"
                 onClick={() => {
                     props.deleteEmployee(props.employee._id);
                 }}
