@@ -68,10 +68,10 @@ export default function AddEmployee() {
                     />
                 </div>
                 <div className="form-group">
+                    <label htmlFor="active">Active</label>
                     <input
                         type="checkbox"
                         className="form-control"
-                        label="Active"
                         id="active"
                         value={form.active}
                         onChange={(e) => updateForm({ active: e.target.value })}
